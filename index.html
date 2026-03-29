@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="SamiGin4 — Minecraft（Java Edition）データパック中心の制作。成果物一覧と連絡先。"
+    />
+    <title>Portfolio | SamiGin4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">本文へスキップ</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <p class="site-header__label">Portfolio</p>
+        <h1 class="site-header__title">SamiGin4</h1>
+        <p class="site-header__lead">
+          制作した成果物・実績をまとめた一覧ページです。<br>
+          公開中のものは各カードから動画やリポジトリへ移動できます。一部は概要のみの掲載です。
+        </p>
+        <p class="site-header__bio">
+          Minecraft（Java Edition）のデータパックを中心に、企画などの制作のお手伝いができます。
+        </p>
+        <div class="site-header__contact-block">
+          <p class="site-header__contact-heading">
+            <span class="site-header__contact-label">連絡先</span>
+            <a
+              class="site-header__contact-link"
+              href="https://x.com/SamiGin4"
+              target="_blank"
+              rel="noopener noreferrer"
+              >X（@SamiGin4）のDM</a
+            >
+            からご連絡ください。
+          </p>
+          <!-- GoogleフォームのURLができたら、必要に応じて下に段落またはリンクを追加 -->
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="site-main">
+      <section class="section" aria-labelledby="works-heading">
+        <div class="section__head">
+          <h2 id="works-heading" class="section__title">成果物一覧</h2>
+          <p class="section__subtitle">
+            ジャンルごとに整理しています。<br>
+            データパックは Minecraft（Java Edition）向けの作品です。
+          </p>
+        </div>
+
+        <section class="genre" aria-labelledby="genre-datapack-heading">
+          <div class="genre__head">
+            <h3 id="genre-datapack-heading" class="genre__title">データパック</h3>
+            <p class="genre__lead">
+              ワールドに入れるだけで動く仕組みとして、公開・配布しているものです。
+            </p>
+          </div>
+          <ul class="card-grid">
+            <li>
+              <article class="card">
+                <h4 class="card__title">QRコードを生成</h4>
+                <p class="card__desc">
+                  ダイアログからURLを登録すると、マップに綺麗に描画されるよう、ブロックを配置してQRコードを生成します。<br>
+                  1枚の地図に収まるサイズのため、アイテムフレームに入れて壁に飾ることも可能です。
+                </p>
+                <ul class="card__tags" aria-label="種別・技術">
+                  <li>Minecraft</li>
+                  <li>Java Edition</li>
+                  <li>データパック</li>
+                </ul>
+                <div class="card__actions">
+                  <a
+                    class="card__link card__link--youtube"
+                    href="https://youtu.be/jvI9QKxougU"
+                    >紹介動画（YouTube）</a
+                  >
+                  <a class="card__link card__link--github" href="https://github.com/letSamigina/dp.qr">ソース（GitHub）</a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card">
+                <h4 class="card__title">Roll und Flip（ダイス）</h4>
+                <p class="card__desc">
+                  ワールド内でダイスを振る機能を追加します。<br>
+                  最大10個まで一度に振れ、出目の上限は1〜100です。<br>
+                  結果は自分だけが確認できる「秘匿」と、全体に公開する「公開」を選べます。<br>
+                </p>
+                <ul class="card__tags" aria-label="種別・技術">
+                  <li>Minecraft</li>
+                  <li>Java Edition</li>
+                  <li>データパック</li>
+                </ul>
+                <div class="card__actions">
+                  <a
+                    class="card__link card__link--youtube"
+                    href="https://youtu.be/vaAkniJ9sgM"
+                    >紹介動画（YouTube）</a
+                  >
+                  <a class="card__link card__link--github" href="https://github.com/letSamigina/dp.ruf">ソース（GitHub）</a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card">
+                <h4 class="card__title">XORを計算</h4>
+                <p class="card__desc">
+                  XORを計算するデータパックです。<br>
+                  スコアボード
+                  <code class="card__code">..factor_a</code> と
+                  <code class="card__code">..factor_b</code>
+                  に値を入れ、<code class="card__code">/function smgn:exe</code>
+                  を実行すると計算されます。
+                </p>
+                <ul class="card__tags" aria-label="種別・技術">
+                  <li>Minecraft</li>
+                  <li>Java Edition</li>
+                  <li>データパック</li>
+                </ul>
+                <div class="card__actions">
+                  <a
+                    class="card__link card__link--youtube"
+                    href="https://youtu.be/lfPAgCQsz_k"
+                    >紹介動画（YouTube）</a
+                  >
+                  <a class="card__link card__link--github" href="https://github.com/letSamigina/dp.xor">ソース（GitHub）</a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card">
+                <h4 class="card__title">快適なサバイバル</h4>
+                <p class="card__desc">
+                  サバイバルモードを快適にするための設定を追加するデータパックです。<br>
+                  現在は天候の操作などに対応しており、機能は順次拡張予定です。
+                </p>
+                <ul class="card__tags" aria-label="種別・技術">
+                  <li>Minecraft</li>
+                  <li>Java Edition</li>
+                  <li>データパック</li>
+                </ul>
+                <div class="card__actions">
+                  <a
+                    class="card__link card__link--youtube"
+                    href="https://youtu.be/EV8dTebJKrQ"
+                    >紹介動画（YouTube）</a
+                  >
+                  <a class="card__link card__link--github" href="https://github.com/letSamigina/dp.eso">ソース（GitHub）</a>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+
+        <section class="genre" aria-labelledby="genre-tools-heading">
+          <div class="genre__head">
+            <h3 id="genre-tools-heading" class="genre__title">開発ツール</h3>
+            <p class="genre__lead">
+              運用や内容が個人向けに寄っている<strong>リポジトリは非公開</strong>としている場合があります。
+            </p>
+          </div>
+          <ul class="card-grid">
+            <li>
+              <article class="card">
+                <h4 class="card__title">mk_datapack</h4>
+                <p class="card__desc">
+                  Minecraft 用データパックを新規に作成するとき、必要なディレクトリやファイルを一括で生成します。<br>
+                  毎回同じ構成を手で作る手間を省き、制作にすぐ入れるようにするためのツールです。
+                </p>
+                <ul class="card__tags" aria-label="種別・技術">
+                  <li>Common Lisp</li>
+                  <li>Minecraft</li>
+                  <li>データパック</li>
+                  <li>非公開</li>
+                </ul>
+                <div class="card__actions">
+                  <span class="card__private-badge" role="note">リポジトリ非公開</span>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card">
+                <h4 class="card__title">mk_resourcepack</h4>
+                <p class="card__desc">
+                  Minecraft 用リソースパック向けに、必要なフォルダやファイルをワンクリックで用意します。<br>
+                  テクスチャやモデルなどを追加していく前段階の土台づくりを自動化する用途です。
+                </p>
+                <ul class="card__tags" aria-label="種別・技術">
+                  <li>Common Lisp</li>
+                  <li>Minecraft</li>
+                  <li>リソースパック</li>
+                  <li>非公開</li>
+                </ul>
+                <div class="card__actions">
+                  <span class="card__private-badge" role="note">リポジトリ非公開</span>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+
+        <section class="genre genre--tbd" aria-labelledby="genre-tbd-heading">
+          <div class="genre__head">
+            <h3 id="genre-tbd-heading" class="genre__title">その他のジャンル</h3>
+            <p class="genre__lead">
+              Web、動画など、別カテゴリの実績は今後ここに追加する予定です。枠だけ先に分けています。
+            </p>
+          </div>
+          <p class="genre__placeholder" role="status">現在、掲載する項目はありません。</p>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <nav class="social" aria-label="SNS・プロフィール">
+          <ul class="social__list">
+            <li>
+              <a
+                class="social__link"
+                href="https://x.com/SamiGin4"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X: @SamiGin4"
+              >
+                <svg class="social__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                  <path
+                    fill="currentColor"
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  />
+                </svg>
+                <span class="social__handle">@SamiGin4</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social__link"
+                href="https://github.com/letSamigina"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub: letSamigina"
+              >
+                <svg class="social__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                  <path
+                    fill="currentColor"
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                  />
+                </svg>
+                <span class="social__handle">letSamigina</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social__link"
+                href="https://www.youtube.com/@SamiGin4"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube: @SamiGin4"
+              >
+                <svg class="social__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                  <path
+                    fill="currentColor"
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+                <span class="social__handle">@SamiGin4</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <p class="site-footer__text">
+          <a href="https://github.com/letSamigina/portfolio">portfolio(repository)</a>
+          <span class="site-footer__sep" aria-hidden="true">·</span>
+          <span>GitHub Pages で公開</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
