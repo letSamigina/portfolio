@@ -98,34 +98,6 @@ body {
   font-size: 1.0625rem;
 }
 
-.site-header__bio {
-  margin: 1.25rem 0 0;
-  max-width: 42em;
-  color: var(--color-text);
-  font-size: 1.0625rem;
-  font-weight: 500;
-  line-height: 1.65;
-}
-
-.site-header__contact-block {
-  margin: 1rem 0 0;
-  max-width: 42em;
-}
-
-.site-header__contact-heading {
-  margin: 0;
-  font-size: 0.9375rem;
-  color: var(--color-text-muted);
-  line-height: 1.6;
-}
-
-.site-header__contact-label {
-  display: inline-block;
-  margin-right: 0.35rem;
-  font-weight: 600;
-  color: var(--color-text);
-}
-
 .site-header__contact-link {
   font-weight: 600;
   color: var(--color-accent);
@@ -185,6 +157,10 @@ body {
   max-width: var(--max-width);
 }
 
+.genre__head--wide {
+  max-width: var(--max-width-wide);
+}
+
 .genre__title {
   margin: 0 0 0.4rem;
   font-family: var(--font-display);
@@ -210,6 +186,10 @@ body {
   font-size: 0.9375rem;
   line-height: 1.6;
   color: var(--color-text-muted);
+}
+
+.genre__outro--after-grid {
+  margin-top: 2.75rem;
 }
 
 .genre__outro-link {

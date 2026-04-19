@@ -24,26 +24,19 @@
         <p class="site-header__label">Portfolio</p>
         <h1 class="site-header__title">Derec S.T.</h1>
         <p class="site-header__lead">
-          制作した成果物・実績をまとめた一覧ページです。<br>
-          公開中のものは各カードから動画やリポジトリへ移動できます。一部は概要のみの掲載です。
-        </p>
-        <p class="site-header__bio">
+          制作した成果物・実績をまとめたページです。<br>
+          公開中のものは各カードから動画やリポジトリへ移動できます。一部は概要のみの掲載です。<br><br>
           Minecraft（Java Edition）のデータパックを中心に、企画などの制作のお手伝いができます。
+          ご依頼は 
+          <a
+            class="site-header__contact-link"
+            href="https://x.com/Derec_ST"
+            target="_blank"
+            rel="noopener noreferrer"
+            >X（@Derec_ST）のDM</a
+          >
+          からご連絡ください。
         </p>
-        <div class="site-header__contact-block">
-          <p class="site-header__contact-heading">
-            <span class="site-header__contact-label">連絡先</span>
-            <a
-              class="site-header__contact-link"
-              href="https://x.com/Derec_ST"
-              target="_blank"
-              rel="noopener noreferrer"
-              >X（@Derec_ST）のDM</a
-            >
-            からご連絡ください。
-          </p>
-          <!-- GoogleフォームのURLができたら、必要に応じて下に段落またはリンクを追加 -->
-        </div>
       </div>
     </header>
 
@@ -53,7 +46,7 @@
           <h2 id="works-heading" class="section__title">成果物一覧</h2>
           <p class="section__subtitle">
             ジャンルごとに整理しています。<br>
-            データパックは Minecraft（Java Edition）向けの作品です。
+            ※データパックは Minecraft（Java Edition）向けの作品です。
           </p>
         </div>
 
@@ -176,19 +169,42 @@
         </section>
 
         <section class="genre" aria-labelledby="genre-zenn-heading">
-          <div class="genre__head">
+          <div class="genre__head genre__head--wide">
             <h3 id="genre-zenn-heading" class="genre__title">技術記事（Zenn）</h3>
             <p class="genre__lead">
-              データパック制作で得た知見を、実装背景と具体的な処理手順付きで発信しています。
+              データパックに関するものに加え、Minecraft上のデータを手がかりにした汎用技術の解説などを発信しています。
             </p>
           </div>
           <ul class="card-grid">
             <li>
               <article class="card">
+                <h4 class="card__title">Minecraftで学ぶBase64</h4>
+                <p class="card__desc">
+                  プレイヤーの頭（player_head）に含まれるvalueというデータを題材に、Base64の仕組みからエンコード手順、デコード後のJSONまでを追う入門寄りの記事です。<br>
+                  コマンドや<code class="card__code">/data</code>で触れる実データと結びつけて説明しています。
+                </p>
+                <ul class="card__tags" aria-label="種別・技術">
+                  <li>Minecraft</li>
+                  <li>Base64</li>
+                  <li>解説</li>
+                </ul>
+                <div class="card__actions">
+                  <a
+                    class="card__link"
+                    href="https://zenn.dev/derec_st/articles/base64_minecraft"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >記事を読む（Zenn）</a
+                  >
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card">
                 <h4 class="card__title">Cursorにマイナー言語（mcfunction）を10000行書かせてみた結果【制作補助】</h4>
                 <p class="card__desc">
                   Cursorに課金して約1ヶ月、データパックのmcfunctionを中心に、1万行超のコードを書かせた制作補助の振り返りです。<br>
-                  汎用AIでは誤りが出やすかった制作でも、実装の妥当性や版の精査、ワールド生成まわり、デバッグ支援まで含めて助かった、という観点で整理しています。
+                  汎用AIでは誤りが出やすかった制作でも、実装の妥当性やバージョンの精査、ワールド生成まわり、デバッグ支援まで含めて助かった、という内容をレポートしています。
                 </p>
                 <ul class="card__tags" aria-label="種別・技術">
                   <li>Minecraft</li>
@@ -209,39 +225,9 @@
             </li>
             <li>
               <article class="card">
-                <h4 class="card__title">桁数が異なる場合でも適切にtriggerの値を分解する方法</h4>
-                <p class="card__desc">
-                  dialog実行時の警告回避のためにtriggerを使う前提で、1つの数値に連結された入力値を分解して解析する方法を整理した記事です。<br>
-                  Roll und Flip（dp.ruf）で実際に使ったアプローチをもとに、可変桁の判定と分岐の設計を解説しています。
-                </p>
-                <ul class="card__tags" aria-label="種別・技術">
-                  <li>Minecraft</li>
-                  <li>データパック</li>
-                  <li>trigger</li>
-                </ul>
-                <div class="card__actions">
-                  <a
-                    class="card__link"
-                    href="https://zenn.dev/derec_st/articles/mc_command-trigger_analysis"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >記事を読む（Zenn）</a
-                  >
-                  <a
-                    class="card__link card__link--github"
-                    href="https://github.com/DerecST/dp.ruf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >関連リポジトリ（dp.ruf）</a
-                  >
-                </div>
-              </article>
-            </li>
-            <li>
-              <article class="card">
                 <h4 class="card__title">データパック開発における「ログ出力」の必要性について【Minecraft】</h4>
                 <p class="card__desc">
-                  データパックでは実行時のエラー指摘が乏しく、storage やスコアボードの不整合を追うのが難しい、という前提で、say／tellraw による進捗・変数の可視化や、<code class="card__code">latest.log</code> からのコピペによる調査のしやすさまで含め、ログを仕組みとして置く意義を整理した記事です。
+                  データパックでは実行時のエラー指摘が乏しく、storageやスコアボードの不整合を追うのが難しいものです。<br>そこで、<code class="card__code">say</code>/<code class="card__code">tellraw</code>による進捗・変数の可視化や、<code class="card__code">latest.log</code> からのコピペによる調査のしやすさまで含め、ログを仕組みとして置く意義を整理・解説しました。
                 </p>
                 <ul class="card__tags" aria-label="種別・技術">
                   <li>Minecraft</li>
@@ -260,6 +246,17 @@
               </article>
             </li>
           </ul>
+          <p class="genre__outro genre__outro--after-grid">
+            そのほかの記事は
+            <a
+              class="genre__outro-link"
+              href="https://zenn.dev/derec_st"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Zennのプロフィール（@derec_st）</a
+            >
+            から一覧で読めます。
+          </p>
         </section>
 
         <section class="genre" aria-labelledby="genre-tools-heading">
@@ -323,7 +320,7 @@
           <div class="genre__head">
             <h3 id="past-works-heading" class="genre__title">過去の実績</h3>
             <p class="genre__lead">
-              本ページ上部の成果物とは直接関係しない経験です。ご参考までに掲載しています。
+              本ページ上部の成果物とは直接関係しない経験です。<br>参考までに掲載しています。
             </p>
           </div>
           <ul class="card-grid">
