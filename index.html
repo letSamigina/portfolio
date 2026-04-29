@@ -43,10 +43,9 @@
     <main id="main" class="site-main">
       <section class="section" aria-labelledby="works-heading">
         <div class="section__head">
-          <h2 id="works-heading" class="section__title">成果物一覧</h2>
+          <h2 id="works-heading" class="section__title">成果・実績一覧</h2>
           <p class="section__subtitle">
-            ジャンルごとに整理しています。<br>
-            ※データパックは Minecraft（Java Edition）向けの作品です。
+            ジャンルごとに整理しています。
           </p>
         </div>
 
@@ -54,7 +53,7 @@
           <div class="genre__head">
             <h3 id="genre-datapack-heading" class="genre__title">データパック</h3>
             <p class="genre__lead">
-              ワールドに入れるだけで動く仕組みとして、公開・配布しているものです。
+              導入するだけで遊べる、Minecraft（Java Edition）向けのデータパックを公開しています。
             </p>
           </div>
           <ul class="card-grid">
@@ -172,26 +171,49 @@
           <div class="genre__head genre__head--wide">
             <h3 id="genre-zenn-heading" class="genre__title">技術記事（Zenn）</h3>
             <p class="genre__lead">
-              データパックに関するものに加え、Minecraft上のデータを手がかりにした汎用技術の解説などを発信しています。
+              Minecraftに関する技術記事を中心に、データパック・プラグイン・サーバー運用まで幅広く発信しています。
             </p>
           </div>
           <ul class="card-grid">
             <li>
               <article class="card">
-                <h4 class="card__title">Minecraftで学ぶBase64</h4>
+                <h4 class="card__title">ツールに頼らずゼロから作るMinecraftプラグイン開発環境</h4>
                 <p class="card__desc">
-                  プレイヤーの頭（player_head）に含まれるvalueというデータを題材に、Base64の仕組みからエンコード手順、デコード後のJSONまでを追う入門寄りの記事です。<br>
-                  コマンドや<code class="card__code">/data</code>で触れる実データと結びつけて説明しています。
+                  Gradleを使って、Minecraftプラグインの開発環境をゼロから作る手順を、選択肢の意味とあわせて整理した記事です。<br>
+                  <code class="card__code">build.gradle</code>、メインクラス、<code class="card__code">plugin.yml</code>の最小構成とビルド確認までを解説しています。
                 </p>
                 <ul class="card__tags" aria-label="種別・技術">
                   <li>Minecraft</li>
-                  <li>Base64</li>
-                  <li>解説</li>
+                  <li>プラグイン</li>
+                  <li>Java</li>
+                  <li>Gradle</li>
                 </ul>
                 <div class="card__actions">
                   <a
                     class="card__link"
-                    href="https://zenn.dev/derec_st/articles/base64_minecraft"
+                    href="https://zenn.dev/derec_st/articles/mc_plugins-setup"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >記事を読む（Zenn）</a
+                  >
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card">
+                <h4 class="card__title">マイクラのマルチサーバー入門：はじめに押さえるべき全体像</h4>
+                <p class="card__desc">
+                  Java版Minecraftのマルチサーバーについて、種類・建て方・選び方・セキュリティを初心者向けに広く整理した入門記事です。<br>
+                  バニラ/プラグイン/MODサーバーの違いや、レンタルサーバー選定時の観点をまとめています。
+                </p>
+                <ul class="card__tags" aria-label="種別・技術">
+                  <li>Minecraft</li>
+                  <li>マルチサーバー</li>
+                </ul>
+                <div class="card__actions">
+                  <a
+                    class="card__link"
+                    href="https://zenn.dev/derec_st/articles/mc_server-guide"
                     target="_blank"
                     rel="noopener noreferrer"
                     >記事を読む（Zenn）</a
@@ -216,28 +238,6 @@
                   <a
                     class="card__link"
                     href="https://zenn.dev/derec_st/articles/cursor_mcfunction"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >記事を読む（Zenn）</a
-                  >
-                </div>
-              </article>
-            </li>
-            <li>
-              <article class="card">
-                <h4 class="card__title">データパック開発における「ログ出力」の必要性について【Minecraft】</h4>
-                <p class="card__desc">
-                  データパックでは実行時のエラー指摘が乏しく、storageやスコアボードの不整合を追うのが難しいものです。<br>そこで、<code class="card__code">say</code>/<code class="card__code">tellraw</code>による進捗・変数の可視化や、<code class="card__code">latest.log</code> からのコピペによる調査のしやすさまで含め、ログを仕組みとして置く意義を整理・解説しました。
-                </p>
-                <ul class="card__tags" aria-label="種別・技術">
-                  <li>Minecraft</li>
-                  <li>データパック</li>
-                  <li>デバッグ</li>
-                </ul>
-                <div class="card__actions">
-                  <a
-                    class="card__link"
-                    href="https://zenn.dev/derec_st/articles/mc_datapack-log"
                     target="_blank"
                     rel="noopener noreferrer"
                     >記事を読む（Zenn）</a
@@ -306,21 +306,11 @@
           </ul>
         </section>
 
-        <section class="genre genre--tbd" aria-labelledby="genre-tbd-heading">
-          <div class="genre__head">
-            <h3 id="genre-tbd-heading" class="genre__title">その他のジャンル</h3>
-            <p class="genre__lead">
-              Web、動画など、別カテゴリの実績は今後ここに追加する予定です。枠だけ先に分けています。
-            </p>
-          </div>
-          <p class="genre__placeholder" role="status">現在、掲載する項目はありません。</p>
-        </section>
-
         <section class="genre genre--history" aria-labelledby="past-works-heading">
           <div class="genre__head">
-            <h3 id="past-works-heading" class="genre__title">過去の実績</h3>
+            <h3 id="past-works-heading" class="genre__title">その他・過去の実績</h3>
             <p class="genre__lead">
-              本ページ上部の成果物とは直接関係しない経験です。<br>参考までに掲載しています。
+              本ページ上部の成果物とは別カテゴリの経験や、過去の実績を掲載しています。<br>参考情報としてご覧ください。
             </p>
           </div>
           <ul class="card-grid">
@@ -426,11 +416,6 @@
             rel="noopener noreferrer"
             >支援はこちら（Ko-fi）</a
           >
-        </p>
-        <p class="site-footer__text">
-          <a href="https://github.com/DerecST/portfolio">portfolio(repository)</a>
-          <span class="site-footer__sep" aria-hidden="true">·</span>
-          <span>GitHub Pages で公開</span>
         </p>
       </div>
     </footer>

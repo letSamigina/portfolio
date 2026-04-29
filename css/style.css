@@ -379,7 +379,7 @@ body {
 }
 
 .site-footer {
-  padding: 1.75rem 1.5rem;
+  padding: 1.25rem 1.5rem;
   border-top: 1px solid var(--color-border);
   text-align: center;
   background: var(--color-surface);
@@ -391,7 +391,7 @@ body {
 }
 
 .site-footer__support {
-  margin: 0 0 1rem;
+  margin: 0.75rem 0 0;
   font-size: 0.875rem;
 }
 
@@ -413,7 +413,7 @@ body {
 
 .social__list {
   list-style: none;
-  margin: 0 0 1.25rem;
+  margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
